@@ -1,0 +1,137 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #FEFDF9;
+  color: #0B0E0D;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a {
+  text-decoration: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select,
+a {
+  color:inherit!important;
+  font: inherit!important;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+/* Размеры шрифтов */
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 220%;
+}
+
+h3 {
+  font-size: 150%;
+}
+
+/*========================================================*/
+
+.header .btn
+{
+  box-shadow: 10px 7px rgba(0, 0, 0);
+}
+
+.header .btn:hover
+{
+  cursor: pointer;
+}
+
+.header .container
+{
+  padding-top: 15px!important;
+  padding-bottom: 30px!important;
+}
+
+.header a:hover
+{
+  padding-bottom: 50px;
+  border-bottom: 7px solid rgba(0, 0, 0);
+}
+
+.header .col-1.position-relative
+{
+  border-left: 3px solid rgba(0, 0, 0);
+  margin-bottom: -100px;
+  margin-right: -60px;
+  height:150px;
+}
+
+.header .star
+{
+  left:0;
+  margin-left:-35px;
+  bottom:0;
+  margin-bottom: 19px;
+}
