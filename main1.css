@@ -1,0 +1,122 @@
+#title{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.84px;
+    width: 1012px;
+    height: 100px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 192;
+    top: 384;
+}
+#text1{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 192.4%; /* 38.48px */
+    letter-spacing: 1.2px;
+    width: 726px;
+    height: 168px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 234;
+    top: 532;
+}
+#text2{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 181.9%; /* 36.38px */
+    letter-spacing: 1.2px;
+    width: 774px;
+    height: 178px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 234;
+    top: 730;
+}
+#up1{
+    position: absolute;
+    left: 165;
+    top: 309;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.44px;
+    width: 246px;
+    height: 97px;
+    flex-shrink: 0;
+}
+#up2{
+    position: absolute;
+    left: 313;
+    top: 309;
+    color: rgba(0, 0, 0, 0.41);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.44px;
+}
+#pic{
+    position: absolute;
+    top: 349;
+    left: 1105;
+    width: 580;
+    height: 570;
+    flex-shrink: 0;
+}
+#textonpic1{
+    position: absolute;
+    top: 562;
+    left: 1118;
+    display: flex;
+    width: 178px;
+    height: 279px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #F5F5F5;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 201.9%; /* 121.14px */
+    letter-spacing: 3.9px;
+}
+#textonpic2{
+    position: absolute;
+    top: 721;
+    left: 1202;
+    width: 206px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #F5F5F5;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 181.9%; /* 43.656px */
+    letter-spacing: 1.44px;
+}
+hr{
+    background: #B19E8C;
+    width: 136px;
+    height: 9px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 187;
+    top: 482;
+}
