@@ -1,3 +1,85 @@
+/*standart html&body styles*/
+html, body {
+	min-height: 100vh;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	line-height: 1;
+}
+
+html {
+	font-family: 'Cuprum', sans-serif;
+}
+
+body {
+	margin: 0;
+	position: relative;
+}
+
+
+/*reset styles*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+*,*::before,*::after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,:active {
+	outline: none;
+}
+
+a:focus,a:active {
+	outline: none;
+}
+
+nav,footer,header,aside {
+	display: block;
+}
+
+input,button,textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display:none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+p { 
+	margin: 5px 0 10px 0; 
+}
+
+a,a:visited,a:hover {
+	text-decoration: none;
+}
+
+ul,li {
+	list-style: none;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+
+
 /* Указываем box sizing */
 *,
 *::before,
@@ -134,4 +216,132 @@ h3 {
   margin-left:-35px;
   bottom:0;
   margin-bottom: 19px;
+}
+
+/*==========================================*/
+.Wrapper {
+  max-width: 1920px;
+  padding: 10px 200px;
+  height: 100%;
+  margin: auto;
+  box-sizing: content-box;
+}
+#product {
+  padding-top: 70px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 70px;
+}
+.card {
+  background-color: #B19E8C;
+  grid-column: 1 / 9;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: content-box;
+}
+.card > .img {
+  /* надо нормально указать путь, не понимаю почему не работает */
+  background-image: url("../assets/Rectangle.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card > .info {
+  width: 100%;
+  height: 100%;
+  padding: 72px 0 55px 11px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 90px;
+}
+.card > .info h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.card > .info p {
+  margin-bottom: 35px;
+}
+.card > .info > .social {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+}
+.card > .info .contacts {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card > .info i {
+  font-size: 30px;
+}
+.card > .info .buttons {
+  display: inline-flex;
+  gap: 15px;
+
+}
+.card > .info p:last-child {
+  margin-bottom: 0;
+}
+.card > .info a:active {
+  color: #000;
+  text-decoration: none;
+}
+.card > .info a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.card > .info a:visited {
+  color: #000;
+  text-decoration: none;
+}
+.card > .info a {
+  color: #000;
+  text-decoration: none;
+}
+
+#product > form {
+  background-color: #fff;
+  border: 1px solid #000;
+  box-shadow: 11px 13px 0px black;
+  grid-column: 9 / 13;
+  box-sizing: border-box;
+  padding: 40px 20px 20px 20px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+#product > form > input {
+  width: 100%;
+  height: 55px;
+  background-color: #E9E9E9;
+  padding: 6px 10px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+#product > form > textarea {
+  width: 100%;
+  background-color: #E9E9E9;
+  height: 100%;
+  resize: none;
+  padding: 6px 10px;
+  font-size: 25px;;
+}
+
+@media screen and (max-width: 1750px) {
+  .Wrapper {
+      padding: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #product {
+      gap: 20px;
+  }
 }
